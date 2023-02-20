@@ -1,0 +1,22 @@
+#include<stdio.h>
+main()
+{
+	int i,n,h,ele,fbig=0,sbig=0;
+	scanf("%d",&n);
+	i=1;
+	while(i<=n)
+	{
+		scanf("%d",&ele);
+		if(ele>fbig){
+		sbig=fbig;
+		fbig=ele;
+	}
+	if(ele>sbig&&ele<fbig)
+	{
+		sbig=ele;
+	}
+			
+			i++;
+	}
+	printf("\nSecond highest=%d",sbig);
+}
